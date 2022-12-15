@@ -10,11 +10,14 @@ export class AppComponent {
 
   getFooter() : string
   {
-    return '2022 © Lista zadań zbudowana w Angularze.';
+    return ' © Lista zadań zbudowana w Angularze.';
   }
 
   get footer() : string
   {
-    return '2022 © Lista zadań zbudowana w Angularze.';
+    return ' © Lista zadań zbudowana w Angularze.';
+  }
+  getDate() : Date{
+    return new Date();
   }
 }
