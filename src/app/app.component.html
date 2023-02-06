@@ -47,12 +47,12 @@
       </li>
     </ul>
 
-    <h1>Dzisiaj brak zadań :-)</h1>
+    <h1 *ngIf="tasks.length === 0">Dzisiaj brak zadań :-)</h1>
 
     <button
       class="btn red"
       (click)="clearTasks()"
-      [disabled]="tasks.length == 0"
+      [disabled]="tasks.length === 0"
     >
       Wyczyść
     </button>
