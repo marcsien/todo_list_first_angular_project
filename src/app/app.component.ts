@@ -8,6 +8,7 @@ import { Task } from './task';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+editMode = false;
 taskName = 'Sugerowana nazwa zadania';
 taskDate = '';
 config: {[key: string]: string} | null = null;
@@ -53,6 +54,10 @@ createTask(){
   this.tasks.push(task);
   this.taskName = '';
   this.taskDate = '';
+}
+
+switchEditMode(){
+  this.editMode = !this.editMode;
 }
 
 }
